@@ -1,0 +1,24 @@
+@import "./../../styles/vars.scss";
+
+.descriptionForm {
+
+    & textarea {
+        padding: 10px;
+        width: clamp(270px, 30vw, 550px);
+        height: 150px;
+        resize: none;
+        font-size: 16px;
+
+
+        &::placeholder {
+            font-size: 16px;
+        }
+        
+        // @include media1830Mixin {
+        //     width: 450px;
+        // }
+
+
+
+    }
+}

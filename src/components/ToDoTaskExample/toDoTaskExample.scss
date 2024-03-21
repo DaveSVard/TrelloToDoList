@@ -1,0 +1,109 @@
+@import "./../../styles/vars.scss";
+
+.toDo__list-item {
+    background-color: rgba(255, 255, 255, 0.596);
+    padding: 10px;
+    position: relative;
+
+
+
+}
+
+.modal__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0005;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    .mod{
+        position: absolute;
+        z-index: 22;
+        top: 0;
+
+        display: flex;
+        column-gap: 10px;
+        row-gap: 15px;
+
+        @include media650Mixin {
+            flex-direction: column;
+        }
+    }
+}
+
+.toDo__list-item__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    &:hover {
+        .pensil-hover {
+            display: block;
+        }
+    }
+}
+
+.toDo__list-item__title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.toDo__list-item__icons {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.pensil-hover {
+    display: none;
+}
+
+
+// ----------
+
+
+.closeBtn {
+    font-size: 30px;
+    
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    & input {
+        width: 270px;
+        height: 75px;
+        padding: 10px;
+
+
+    }
+}
+
+.modal__tools {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+}
+
+.modal__tools-item {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+}

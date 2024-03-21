@@ -1,0 +1,50 @@
+@import "./../../styles/vars.scss";
+
+.toDos {
+    margin-top: 20px;
+}
+
+.toDos__items {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(290px, 4fr));
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    justify-items: center;
+    gap: 20px;
+
+    @include media1250Mixin {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media1050Mixin {
+        grid-template-columns: 1fr;
+        
+    }
+
+    
+}
+
+.toDos__form {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    width: 300px;
+
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.349);
+    }
+
+    
+    @include media1250Mixin {
+        width: 500px;
+    }
+
+    @include media1050Mixin {
+        width: clamp(290px, 50vw, 500px);
+    }
+}

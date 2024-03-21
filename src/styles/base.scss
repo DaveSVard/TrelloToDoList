@@ -1,0 +1,82 @@
+@import "./vars.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+
+    background-image: url('./../images/mountains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.container {
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 7px;
+
+    & input {
+        text-align: center;
+
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}
+
+.btn-1 {
+    padding: 5px 15px;
+
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.errors {
+    font-size: 15px;
+    text-align: center;
+    color: red;
+}
+
+.p-fz16 {
+    
+    font-size: 16px;
+}
+
+.p-fz14 {
+    font-size: 14px;
+}
+
+.h2-1 {
+
+    @include media500Mixin {
+        font-size: 16px;
+    }
+}
+
+.icon {
+    
+    @include media500Mixin {
+        font-size: 16px;
+    }
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.signUp {
+    margin-top: 20px;
+}
+
+.signUp__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    row-gap: 15px;
+}
+
+.signUp__title {
+    font-size: 25px;
+    font-weight: 500;
+}

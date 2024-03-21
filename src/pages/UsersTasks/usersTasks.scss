@@ -1,0 +1,29 @@
+.myTasks__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.myTasks {
+    margin-top: 20px;
+}
+
+.myTasks__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.myTasks__info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.myTasks__info-item {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color:  #6ac4c4ad;
+}

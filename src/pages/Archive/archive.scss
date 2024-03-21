@@ -1,0 +1,45 @@
+.archive {
+    margin-top: 20px;
+}
+
+.archive__wrapper {
+
+}
+
+.archive__info {
+    min-height: 50px;
+    background-color: #6ac4c4ad;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.archive__info-list {
+    padding: 20px;
+    list-style: disc;
+
+}
+
+.archive__title {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.archive__info-inner__list {
+    padding: 10px;
+    list-style: disc;
+}
+
+.info__title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.archiveBtn {
+    padding: 7px 10px;
+    background-color: rgba(255, 0, 0, 0.842);
+    border-radius: 10px;
+}
